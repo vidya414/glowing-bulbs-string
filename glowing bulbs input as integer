@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        int i,j,c=0,k;
+        int t=s.nextInt();
+        while(t>0){
+         int a[] = new int[40];
+         for(i=1;i<40;i++){
+             a[i]=s.nextInt();
+         }
+         k=s.nextInt();
+        for(i=1;i<40;i++){
+            if(a[i]==1)
+            {
+                for(j=i;j<40;j++){
+                    if(j%i==0){
+                        a[j]=1;
+                    }
+                }
+            }
+        }
+       for(i=0;i<a.length;i++){
+            if(a[i]==1)
+            c=c+1;
+            if(c==k)
+            break;
+            }
+        System.out.print(i);
+        t--;
+        }
+    }
+}
