@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        int t,i=0,j=0,y,c=0;
+        Scanner s=new Scanner(System.in);
+        t=s.nextInt();
+        int[] n=new int[t];
+        for(i=0;i<t;i++){
+            n[j]=s.nextInt();
+            j++;
+        }
+        for(i=0;i<j;i++){
+            c=0;
+            y=n[i];
+            while(y>1){
+            if(y%2!=0){
+            c++;
+            }
+            y=y/2;
+            }
+            System.out.println(c);
+        }
+
+    }
+}
